@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbspqpua2mvf4"]
+
+[ext_resource type="Texture2D" uid="uid://bdh44fme4emm8" path="res://icon.png" id="1_ox2vf"]
+[ext_resource type="Script" path="res://countLabel.gd" id="2_kjobc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3qc67"]
+font_size = 81
+
+[sub_resource type="LabelSettings" id="LabelSettings_q6lnf"]
+font_size = 47
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2.46094, 2.42278)
+texture = ExtResource("1_ox2vf")
+
+[node name="CountLabel" type="Label" parent="."]
+offset_left = -153.0
+offset_top = 160.0
+offset_right = 153.0
+offset_bottom = 313.0
+text = "Count"
+label_settings = SubResource("LabelSettings_3qc67")
+horizontal_alignment = 1
+script = ExtResource("2_kjobc")
+
+[node name="NameLabel" type="Label" parent="."]
+offset_left = -157.0
+offset_top = -308.0
+offset_right = 152.0
+offset_bottom = -162.0
+text = "Owen Smith
+Test Project"
+label_settings = SubResource("LabelSettings_q6lnf")
+horizontal_alignment = 1
